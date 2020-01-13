@@ -172,6 +172,7 @@ if __name__ == "__main__":
 		print(date)
 		worksheet = login_open_sheet(GDOCS_OAUTH_JSON, GDOCS_SPREADSHEET_NAME)
 		# time.sleep(5)
-		worksheet.append_row([date,regPower,voltage,current])
+		#worksheet.append_row([date,regPower,voltage,current])
+		worksheet.append_row([date])
 	finally:
 		sensor.close()
